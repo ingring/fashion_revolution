@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <title>Small, but perfectly formed</title>
+    <meta name="description" content="About the small, but perfectly formed campaign">
+  </head>
+  <body>
+    <!-- skip to main content -->
+    <a class="skip-to-content" href="#content">Skip to main</a>
+
+    <!-- Pop up after two minutes -->
+    <div class="popup--container">
+      <div class="overlay"></div>
+      <div
+        class="popup--content"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="dialog_label"
+      >
+        <p id="dialog_label">
+          Be a Fashion Revolutionary,
+          <a href="take_action.html">take action!</a>
+        </p>
+        <button id="close" aria-label="exit popup">&#10006;</button>
+      </div>
+    </div>
+
+    <header>
+      <div>Fashion revolution</div>
+      <nav>
+        <!-- inspiration: https://polypane.app/blog/the-perfect-responsive-menu/ -->
+        <div class="right">
+          <button aria-expanded="false" aria-controls="menu" id="menu-btn">
+            menu
+          </button>
+        </div>
+        <ul id="menu" role="navigation" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li class="hidden">
+            <a href="environmental_impact.html">Environmental impact</a>
+          </li>
+          <li class="hidden">
+            <a href="sustainability.html">Sustainability</a>
+          </li>
+          <li
+            id="campaignsLI"
+            class="hidden"
+            aria-label="List of campaigns"
+            tabindex="0"
+          >
+            Campaigns
+            <ul id="campaigns-dropdown">
+              <li>
+                <a class="menu-skip" href="#after-dropdown"
+                  >Skip over the navigation list of the different campaigns</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="fashion_revolution_week.html"
+                  aria-label="Campaign Fashion Revolution Week"
+                  >Fashion Revolution Week</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="good_clothes_fair_pay.html"
+                  aria-label="Campaign Good Clothes, Fair Pay"
+                  >Good Clothes, Fair Pay</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="whomademyclothes.html"
+                  aria-label="Campaign Who Made My Clothes"
+                  >Who Made My Clothes</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="small_but_perfectly_formed.html"
+                  aria-label="Campaign small but perfectly formed"
+                  >Small but perfectly formed</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hidden" id="after-dropdown">
+            <a href="take_action.html">Take action</a>
+          </li>
+          <li id="skip-to-close-btn-li">
+            <a class="skip" id="skip-to-close-btn-remove" href="#menu-btn"
+              >Go to close menu</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section>
+        <h1>Small But Perfectly Formed</h1>
+        <p>
+          Accelerating small and medium fashion enterprises to transition to
+          circular and sustainable models.
+        </p>
+      </section>
+
+      <div
+        class="fullscreen_img"
+        id="smallbutperfectlyformed"
+        title="clean clothes campaign factory workers"
+      ></div>
+
+      <section>
+        <!-- medium-sized enterprise -->
+        <h2>About Small But Perfectly Formed</h2>
+        <p>
+          Small but Perfectly Formed is a cross Europe collaborative project
+          that will accelerate fashion SME’s to transition to work within
+          circular and sustainable business models. Small but Perfectly Formed
+          recognises that small and medium size fashion enterprises are working
+          within a wider system and need more than acceleration; they need to be
+          integrated into a system that truly puts people and planet before
+          profit. Therefore, Small but Perfectly Formed aims to drive systemic
+          change in the fashion business support landscape through 'accelerating
+          the accelerators', mapping the policy landscape in which SMEs operate
+          and creating a transnational network of SMEs and organisations who
+          support them.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This website is inspired by the
+        <a href="https://www.fashionrevolution.org/" target="_blank"
+          >https://www.fashionrevolution.org/</a
+        >
+      </p>
+    </footer>
+
+    <!-- The navigation menu for mobile version -->
+    <script src="assets/js/menu.js"></script>
+
+    <!-- hello bar pop up -->
+    <script src="assets/js/popup.js"></script>
+  </body>
+</html>

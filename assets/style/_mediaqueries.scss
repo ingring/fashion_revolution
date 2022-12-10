@@ -1,0 +1,96 @@
+@media only screen and (min-width: 900px) {
+    header {
+        display: flex;
+        background-color: #272228;
+        color: white;
+        padding: 20px;
+    
+        button {
+            display: none;
+        }
+
+        nav {
+            max-width: 70vw;
+            margin: 0 0 0 auto;
+    
+            ul#menu {
+                display: flex;
+                gap: 40px;
+                height: auto;
+                padding: 0;
+
+                li {
+                    margin: 0;
+                }
+            }
+        }
+
+        //display the hidden navbar on desktop
+        [hidden] { 
+            display: flex; 
+        }
+    }
+
+    .fullscreen_img {
+        width: 40vw;
+        margin: 0 auto;
+        min-width: 40vw;
+    }
+
+    main {
+        max-width: 40vw;
+        margin: 0 auto;
+
+        .first-section--first-page {
+            display: flex;
+            flex-direction: column-reverse;
+            max-width: 40vw;
+            margin: 0 auto;
+
+            .reverse--container {
+                background-color: white;
+                color:#272228;
+            }
+
+            .fullscreen_img {
+                height: 50vh;
+                margin: 0;
+            }
+        
+        }
+    }
+
+    #takeaction {
+        background-image: url("../img/take_action.jpg");
+    }
+
+    table {
+        margin: 40px auto;
+    }
+
+    form {
+        max-width: 25vw;
+    }
+
+    // Video
+    .video {
+        margin: 0 auto;
+        width: 600px;
+        height: 360px;
+    }
+
+    .campaign-content {
+        margin: auto;
+    }
+
+    .campaign-item {
+        width: 30vw;
+        min-width: fit-content;
+    }
+
+    img {
+        width: 40vw;
+        min-width: 40vw;
+        margin: 0 auto;
+    }
+}

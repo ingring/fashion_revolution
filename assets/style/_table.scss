@@ -1,0 +1,47 @@
+// Table style
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 40px 0;
+    color: black;
+}
+
+caption {
+    text-align: left;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+td, th {
+    padding: 20px;
+    max-width: 70ch;
+    vertical-align: top;
+    text-align: left;
+}
+
+tr:hover {background-color: #ddd;}
+
+th.firstline {
+    border-bottom: solid 2px black;
+}
+
+form {
+    margin: 40px auto;
+    display: grid;
+    
+
+    label {
+        grid-column: 1;
+        display: inline-block;
+    }
+
+    input {
+        margin: 5px 0;
+    }
+
+    .submit {        
+        margin: 5px 0 0 auto;
+        background-color: #272228;
+        color: white;
+    }
+}

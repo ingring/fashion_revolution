@@ -1,0 +1,38 @@
+.popup--container {
+    //instead of using display none
+    visibility: hidden;
+    max-height: 0;
+    width: 100vw;
+    background-color: blueviolet;
+    color: white;
+
+    .popup--content {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5%;
+        padding: 20px;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+
+    a {
+        color: blueviolet;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    button {
+        background-color: blueviolet;
+        border: none;
+        color: white;
+    }
+}
+
+.show {
+    visibility: visible;
+    max-height: fit-content;
+}

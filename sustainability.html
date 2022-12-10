@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <title>Sustainability</title>
+    <meta name="description" content="How fashion relates to sustainability">
+  </head>
+  <body>
+    <!-- skip to main content -->
+    <a class="skip-to-content" href="#content">Skip to main</a>
+
+    <header>
+      <div>Fashion revolution</div>
+      <nav>
+        <!-- inspiration: https://polypane.app/blog/the-perfect-responsive-menu/ -->
+        <div class="right">
+          <button aria-expanded="false" aria-controls="menu" id="menu-btn">
+            menu
+          </button>
+        </div>
+        <ul id="menu" role="navigation" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li class="hidden">
+            <a href="environmental_impact.html">Environmental impact</a>
+          </li>
+          <li class="hidden">
+            <a href="sustainability.html">Sustainability</a>
+          </li>
+          <li
+            id="campaignsLI"
+            class="hidden"
+            aria-label="List of campaigns"
+            tabindex="0"
+          >
+            Campaigns
+            <ul id="campaigns-dropdown">
+              <li>
+                <a class="menu-skip" href="#after-dropdown"
+                  >Skip over the navigation list of the different campaigns</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="fashion_revolution_week.html"
+                  aria-label="Campaign Fashion Revolution Week"
+                  >Fashion Revolution Week</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="good_clothes_fair_pay.html"
+                  aria-label="Campaign Good Clothes, Fair Pay"
+                  >Good Clothes, Fair Pay</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="whomademyclothes.html"
+                  aria-label="Campaign Who Made My Clothes"
+                  >Who Made My Clothes</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="small_but_perfectly_formed.html"
+                  aria-label="Campaign small but perfectly formed"
+                  >Small but perfectly formed</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hidden" id="after-dropdown">
+            <a href="take_action.html">Take action</a>
+          </li>
+          <li id="skip-to-close-btn-li">
+            <a class="skip" id="skip-to-close-btn-remove" href="#menu-btn"
+              >Go to close menu</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section>
+        <!-- Text from: https://www.stkate.edu/newswire/news/sustainability-in-fashion-industry -->
+        <h1>Sustainability</h1>
+        <p>
+          Sustainability in the fashion industry means promoting the well-being
+          of people, communities, and the environment. The fashion industry — in
+          company with other big energy consumers like agriculture and fuel — is
+          in dire need of a thoughtful redesign.
+        </p>
+      </section>
+
+      <img src="assets/img/sustainbility_pants.webp" alt="upcutted jeans" />
+
+      <!-- Text and image from: https://www.google.com/amp/s/www.cnn.com/style/amp/the-problem-with-sustainable-fashion/index.html -->
+      <section>
+        <h2>Problem with 'sustainable fashion'</h2>
+        <p>
+          The term "sustainability," therefore, is considered by some industry
+          experts to be so broad as to be problematic. Designer Rejina Pyo, who
+          works with materials including recycled polyester and organic cotton,
+          as well as regularly visiting her factories and suppliers to ensure
+          they uphold ethical standards, said, "We don't describe ourselves as a
+          sustainable brand because there is always more to do, and I'm not sure
+          there is any such thing as a truly sustainable fashion company."
+        </p>
+        <p>
+          "I think there is a lot of greenwashing out there, which does dilute
+          the meaning of the term, but it is still really important that we are
+          talking about it. The more awareness there is the more we can
+          challenge and interrogate its use," Pyo added.
+        </p>
+        <p>
+          Similarly, designer Phoebe English said the term was important, but
+          too vague to be of real value. "I wouldn't describe our label as a
+          'sustainable label,' as there isn't actually a defined way to
+          determine what is sustainable fashion and what isn't sustainable
+          fashion."
+        </p>
+      </section>
+      <img
+        src="assets/img/sustainability_runway.jpg"
+        alt="Fashion runway where it is placed trees in the middle of the runway"
+      />
+    </main>
+
+    <footer>
+      <p>
+        This website is inspired by the
+        <a href="https://www.fashionrevolution.org/" target="_blank"
+          >https://www.fashionrevolution.org/</a
+        >
+      </p>
+    </footer>
+
+    <!-- The navigation menu for mobile version -->
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>

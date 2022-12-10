@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <title>Fashion Revolution Week</title>
+    <meta name="description" content="About fashion revolution week campaign">
+  </head>
+  <body>
+    <!-- skip to main content -->
+    <a class="skip-to-content" href="#content">Skip to main</a>
+
+    <!-- Pop up after two minutes -->
+    <div class="popup--container">
+      <div class="overlay"></div>
+      <div
+        class="popup--content"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="dialog_label"
+      >
+        <p id="dialog_label">
+          Be a Fashion Revolutionary,
+          <a href="take_action.html">take action!</a>
+        </p>
+        <button id="close" aria-label="exit popup">&#10006;</button>
+      </div>
+    </div>
+
+    <header>
+      <div>Fashion revolution</div>
+      <nav>
+        <!-- inspiration: https://polypane.app/blog/the-perfect-responsive-menu/ -->
+        <div class="right">
+          <button aria-expanded="false" aria-controls="menu" id="menu-btn">
+            menu
+          </button>
+        </div>
+        <ul id="menu" role="navigation" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li class="hidden">
+            <a href="environmental_impact.html">Environmental impact</a>
+          </li>
+          <li class="hidden">
+            <a href="sustainability.html">Sustainability</a>
+          </li>
+          <li
+            id="campaignsLI"
+            class="hidden"
+            aria-label="List of campaigns"
+            tabindex="0"
+          >
+            Campaigns
+            <ul id="campaigns-dropdown">
+              <li>
+                <a class="menu-skip" href="#after-dropdown"
+                  >Skip over the navigation list of the different campaigns</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="fashion_revolution_week.html"
+                  aria-label="Campaign Fashion Revolution Week"
+                  >Fashion Revolution Week</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="good_clothes_fair_pay.html"
+                  aria-label="Campaign Good Clothes, Fair Pay"
+                  >Good Clothes, Fair Pay</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="whomademyclothes.html"
+                  aria-label="Campaign Who Made My Clothes"
+                  >Who Made My Clothes</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="small_but_perfectly_formed.html"
+                  aria-label="Campaign small but perfectly formed"
+                  >Small but perfectly formed</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hidden" id="after-dropdown">
+            <a href="take_action.html">Take action</a>
+          </li>
+          <li id="skip-to-close-btn-li">
+            <a class="menu-skip" id="skip-to-close-btn-remove" href="#menu-btn"
+              >Go to close menu</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section>
+        <h1>Fashion Revolution Week</h1>
+        <p>
+          Fashion Revolution Week is an annual campaign bringing together the
+          world’s largest fashion activism movement for seven days of action.
+        </p>
+      </section>
+
+      <img
+        src="assets/img/who_made_my_clothes_runway.png"
+        alt="runway, model wearing underwear with the words 'who made my clothes' written on her stomach"
+      />
+
+      <section>
+        <h2>About fashion revolution week</h2>
+        <p>
+          Fashion Revolution week happens every year in the week surrounding the
+          24th of April. This date is the anniversary of the 2013 Rana Plaza
+          collapse.
+        </p>
+        <p>
+          Rana Plaza, a building in Bangladesh, housed a number of garment
+          factories, employing around 5,000 people. The people in this building
+          were manufacturing clothing for many of the biggest global fashion
+          brands. More than 1,100 people – mostly young women – died in the
+          collapse and another 2,500 were injured, making it the fourth largest
+          industrial disaster in history.
+        </p>
+        <p>No one should die for fashion.</p>
+      </section>
+
+      <img
+        src="assets/img/we_are_fashion_revolution_runway.png"
+        alt="from a fashion revolution runway where one woman has a 'we are fashion revolution' poster"
+      />
+
+      <!-- Table -->
+      <!-- text from https://en.wikipedia.org/wiki/Fashion_Revolution -->
+      <section>
+        <h3>Fashion Revolution week timeline</h3>
+        <p>
+          The first ever fashion revolution day happened in 2014. In 2016 it
+          expanded to a whole week.
+        </p>
+
+        <!-- Skipping the table -->
+        <a href="#skip-table" class="skip"
+          >Skip table about fashion revolution week</a
+        >
+
+        <table
+          tabindex="0"
+          summary="A list of all of the fashion revolution days and weeks through the years"
+        >
+          <caption tabindex="0">
+            Fashion revolution day/week effect:
+          </caption>
+          <tr>
+            <th scope="col" tabindex="0" class="firstline">Year</th>
+            <th scope="col" tabindex="0" class="firstline">Effect</th>
+            <!-- <th scope="col" class="firstline">Date</th> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2014">2014</th>
+            <td tabindex="0">
+              The first fashion revolution day ever, the hashtag #insideout was
+              the no. 1 global trend on Twitter.
+            </td>
+            <!-- <td>24th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2015">2015</th>
+            <td tabindex="0">
+              63 million people from across 76 countries made the hashtag
+              #WhoMadeMyClothes the number one trend on Twitter.
+            </td>
+            <!-- <td>24th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2016">2016</th>
+            <td tabindex="0">
+              First year it took place over a week, and 70,000 people around the
+              world asked brands #whomademyclothes with 156 million impressions
+              of the hashtag on social media. More than 1200 fashion brands and
+              retailers that responded with photographs of their workers saying
+              #imadeyourclothes.
+            </td>
+            <!-- <td>18th - 24th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2017">2017</th>
+            <td tabindex="0">
+              There were 533 million impressions on social media posts using one
+              of Fashion Revolution's hashtags during April. Over 2000 brands
+              and producer groups responded, answering #imadeyourclothes.
+            </td>
+            <!-- <td>24th - 30th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2018">2018</th>
+            <td tabindex="0">
+              720 million impressions of posts using one of the hashtags during
+              April 2018, an increase of 35% on last year.
+            </td>
+            <!-- <td>23th - 29th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2019">2019</th>
+            <td tabindex="0">
+              700 million impressions of posts made using fashion revolution
+              hashtags on instagram during April 2019.
+            </td>
+            <!-- <td>22nd - 28th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2020">2020</th>
+            <td tabindex="0">
+              Fashion Revolution launched Fashion Open Studio, an international
+              fashion showcase produced digitally to comply with COVID-19 stay
+              at home orders. It also launched a new hashtag #whatsinmyclothes
+              focused on fabric composition and the chemicals used in textile
+              production.
+            </td>
+            <!-- <td>20th - 26th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2021">2021</th>
+            <td tabindex="0">
+              2021 was possibly the biggest Fashion Revolution Week ever,
+              despite the pandemic forcing most of our campaigning online for
+              the second year running, our global community delivered incredible
+              events and activations across the world and made a huge impact.
+            </td>
+            <!-- <td>19th - 25th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2022">2022</th>
+            <td tabindex="0">
+              The theme for Fashion Revolution Week 2022 was Money, Fashion,
+              Power. It builds on the knowledge that the mainstream fashion
+              industry relies upon the exploitation of labour and natural
+              resources.
+            </td>
+            <!-- <td>18th - 24th April</td> -->
+          </tr>
+          <tr>
+            <th scope="row" tabindex="0" aria-label="year 2023">2023</th>
+            <td tabindex="0">
+              Next year the Fashion Revolution Week marks 10 years since the
+              Rana Plaza factory collapse.
+            </td>
+            <!-- <td>24th April</td> -->
+          </tr>
+        </table>
+      </section>
+
+      <p id="skip-table"></p>
+    </main>
+
+    <footer>
+      <p>
+        This website is inspired by the
+        <a href="https://www.fashionrevolution.org/" target="_blank"
+          >https://www.fashionrevolution.org/</a
+        >
+      </p>
+    </footer>
+
+    <!-- The navigation menu for mobile version -->
+    <script src="assets/js/menu.js"></script>
+
+    <!-- hello bar pop up -->
+    <script src="assets/js/popup.js"></script>
+  </body>
+</html>

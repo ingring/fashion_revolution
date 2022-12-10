@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <title>Who made my clothes</title>
+    <meta name="description" content="About who made my clothes campaign">
+  </head>
+  <body>
+    <!-- skip to main content -->
+    <a class="skip-to-content" href="#content">Skip to main</a>
+
+    <!-- Pop up after two minutes -->
+    <div class="popup--container">
+      <div class="overlay"></div>
+      <div
+        class="popup--content"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="dialog_label"
+      >
+        <p id="dialog_label">
+          Be a Fashion Revolutionary,
+          <a href="take_action.html">take action!</a>
+        </p>
+        <button id="close" aria-label="exit popup">&#10006;</button>
+      </div>
+    </div>
+
+    <header>
+      <div>Fashion revolution</div>
+      <nav>
+        <!-- inspiration: https://polypane.app/blog/the-perfect-responsive-menu/ -->
+        <div class="right">
+          <button aria-expanded="false" aria-controls="menu" id="menu-btn">
+            menu
+          </button>
+        </div>
+        <ul id="menu" role="navigation" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li class="hidden">
+            <a href="environmental_impact.html">Environmental impact</a>
+          </li>
+          <li class="hidden">
+            <a href="sustainability.html">Sustainability</a>
+          </li>
+          <li
+            id="campaignsLI"
+            class="hidden"
+            aria-label="List of campaigns"
+            tabindex="0"
+          >
+            Campaigns
+            <ul id="campaigns-dropdown">
+              <li>
+                <a class="menu-skip" href="#after-dropdown"
+                  >Skip over the navigation list of the different campaigns</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="fashion_revolution_week.html"
+                  aria-label="Campaign Fashion Revolution Week"
+                  >Fashion Revolution Week</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="good_clothes_fair_pay.html"
+                  aria-label="Campaign Good Clothes, Fair Pay"
+                  >Good Clothes, Fair Pay</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="whomademyclothes.html"
+                  aria-label="Campaign Who Made My Clothes"
+                  >Who Made My Clothes</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="small_but_perfectly_formed.html"
+                  aria-label="Campaign small but perfectly formed"
+                  >Small but perfectly formed</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hidden" id="after-dropdown">
+            <a href="take_action.html">Take action</a>
+          </li>
+          <li id="skip-to-close-btn-li">
+            <a class="menu-skip" id="skip-to-close-btn-remove" href="#menu-btn"
+              >Go to close menu</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section>
+        <h1>Who made my clothes</h1>
+        <p>
+          Fashion supply chains are notoriously opaque, and this can enable
+          exploitative working conditions to thrive while obscuring who has the
+          responsibility and power to redress them.
+        </p>
+        <p>
+          While a growing number of brands and retailers have published a list
+          of the factories where their garments are cut and sewn, the vast
+          majority of brands are not yet disclosing the facilities where fabrics
+          and yarns are made. When you look further down the supply chain, where
+          fabrics are knitted or woven, textiles are treated and laundered,
+          yarns are spun and dyed, fibres are sorted and processed and raw
+          materials are grown and picked; there remains a widespread lack of
+          transparency.
+        </p>
+        <p>
+          We need brands to provide more visibility and take more responsibility
+          for their entire global supply chain, including processing facilities
+          and textile mills.
+        </p>
+        <p>
+          We’re calling upon citizens everywhere to demand greater transparency
+          from brands by asking #WhoMadeMyFabric? We’re also calling for
+          producers to tell us #IMadeYourFabric, so we can connect more closely
+          with the people who produce the fabrics and raw materials we wear.
+        </p>
+      </section>
+
+      <img
+        src="assets/img/who_made_my_clothes_runway.png"
+        alt="runway, model wearing underwear with the words 'who made my clothes' written on her stomach"
+      />
+
+      <section>
+        <h2>Fashion Revolution Podcast</h2>
+        <p>
+          Have you ever wondered who made my clothes? Or considered what life is
+          like for the people stitch our garments, what sort of conditions they
+          might be working in, and how much they're paid? In this debut 3-part
+          series of the Fashion Revolution Podcast, we will be exploring these
+          importance questions. We will hear about the difficult living and
+          working conditions of garment workers across the world, and explore
+          the ways we can work together to change things for the better. Hosted
+          on Acast. See acast.com/privacy for more information.
+        </p>
+      </section>
+
+      <!-- Skipping audio -->
+      <a href="#skip-audio" class="skip"
+        >Skip audio about who made my clothes</a
+      >
+
+      <section class="audio--container">
+        <h3>Fashion Revolution Podcast: Trailer</h3>
+        <video class="audio" controls>
+          <source src="assets/media/audio.mp3" type="audio/mpeg" />
+          <source src="assets/media/audio.ogg" type="audio/ogg" />
+          Your browser does not support the video tag.
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="en"
+            src="assets/media/audio.vtt"
+            default
+          />
+        </video>
+
+        <!-- My own controls -->
+        <!-- Insipred from https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia -->
+        <div class="controls">
+          <button class="playpause">Play</button>
+          <button class="stop">Stop</button>
+          <button class="rwd">Rwd</button>
+          <button class="fwd">Fwd</button>
+          <div class="time">00:00</div>
+        </div>
+
+        <button class="transcript--btn" id="transcript__audio--btn">
+          Show transcript
+        </button>
+        <div id="transcript__hidden" hidden>
+          <p tabindex="0">
+            Have you ever wondered who made my clothes? Well in the official
+            fashion revolution podcast we’ll be asking exactly that. Most of our
+            clothing is made in far away places by people we never see. By
+            delving into the lives of garment workers from around the globe,
+            we'll uncover some of the stories behind your favourite outfits.
+            We’ll speak to experts about how the fashion industry works and
+            explore the ways everybody can play a part in changing things for
+            the better. At the end you’ll find out how you too can join the
+            fashion revolution.
+          </p>
+          <p>
+            You can download all the episodes in our three-part series through
+            iTunes, the acast app or wherever you get your podcasts.
+          </p>
+        </div>
+      </section>
+
+      <section id="skip-audio">
+        <!-- text from: https://goodmakertales.com/where-do-clothing-brands-manufacture/ -->
+        <h2>Where do clothing brands manufacture?</h2>
+        <p>
+          Understanding where our clothes come from can be a complicated
+          question. One t-shirt can have travelled through multiple countries
+          before reaching your wardrobe. While a clothing business may have its
+          headquarters and design its clothes in one part of the world, this
+          doesn’t mean that this is where its garment factories are located.
+        </p>
+        <p>
+          The biggest manufacturer and exporter of clothing and apparel products
+          is China, with 65% of the world’s clothing being made there.
+        </p>
+        <p>
+          The second largest country for clothing manufacturing in the world is
+          Bangladesh. Garment exports make up close to 85% of the country’s
+          overall exports. Bangladesh’s ready-made garments industry has seen
+          growth in recent years, with its share of global garment exports
+          rising to 6.7%.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        This website is inspired by the
+        <a href="https://www.fashionrevolution.org/" target="_blank"
+          >https://www.fashionrevolution.org/</a
+        >
+      </p>
+    </footer>
+
+    <!-- The navigation menu for mobile version -->
+    <script src="assets/js/menu.js"></script>
+
+    <!-- transcript button -->
+    <script src="assets/js/transcript.js"></script>
+
+    <!-- video controls -->
+    <script src="assets/js/media.js"></script>
+
+    <!-- hello bar pop up -->
+    <script src="assets/js/popup.js"></script>
+  </body>
+</html>

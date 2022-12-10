@@ -1,0 +1,26 @@
+// Images
+.fullscreen_img {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#takeaction {
+    background-image: url("../img/take_action.jpg");
+}
+
+//these images are not as important, more just illustrating. To make the website responsive and different on mobile and desktop I have chosen to have these images in a background-image.
+//Please take a look in the report for deeper explenation. 
+
+#firstpage {
+    background-image: url("../img/runway_firstpage.jpg");
+}
+
+#smallbutperfectlyformed {
+    background-image: url("../img/small_but_perfectly_formed.png");
+}
+
+img {
+    width: 100vw;
+}
