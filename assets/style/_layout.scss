@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
 // skip to main content
 .skip-to-content {
     position: absolute;
@@ -24,10 +32,6 @@
 .skip:focus {
     position: relative;
     left: 0;
-}
-
-body {
-    font-size: 16px;
 }
 
 a:hover, button:hover {
@@ -55,6 +59,8 @@ header {
         background-color: #272228;
         color: white;
         font-weight: bold;
+        font-size: 1.8rem;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     nav {
@@ -106,12 +112,15 @@ header {
     }
 }
 
-
 main {
 
     h1, h2, h3 {
         text-align: center;
         padding: 10px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
     }
 
     p{

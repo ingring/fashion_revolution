@@ -1,5 +1,5 @@
 // video controls
-.playpause, .stop, .rwd, .fwd {
+.playpause, .stop, .rwd, .fwd, .mute, .volinc, .voldec {
     font-weight: bold;
     padding: 10px;
     margin: 10px;
@@ -15,11 +15,12 @@
     display: flex;
     flex-direction: column;
 
+
     .controls {
         margin: 0 auto;
     }
 
-    .playpause, .stop, .rwd, .fwd {
+    .playpause, .stop, .rwd, .fwd, .mute, .volinc, .voldec {
         background-color: white;
         color:#272228;
     }
@@ -49,7 +50,7 @@
         padding: 20px;
     }
 
-    .playpause, .stop, .rwd, .fwd {
+    .playpause, .stop, .rwd, .fwd, .mute, .volinc, .voldec {
         background-color:#272228;
         color:white;
     }

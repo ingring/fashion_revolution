@@ -173,13 +173,16 @@
 
         <!-- My own controls -->
         <!-- Insipred from https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia -->
-        <div class="controls">
+        <div class="controls">  
           <button class="playpause">Play</button>
           <button class="stop">Stop</button>
-          <button class="rwd">Rwd</button>
-          <button class="fwd">Fwd</button>
-          <div class="time">00:00</div>
-        </div>
+          <button class="rwd" aria-label="go back three minutes">Rwd</button>
+          <button class="fwd" aria-label="go forth three minutes">Fwd</button>
+          <button class="mute" type="button" data-state="mute">Mute</button>
+          <button class="volinc" type="button" data-state="volup">Vol+</button>
+          <button class="voldec" type="button" data-state="voldown">Vol-</button>
+          <div class="time--container" tabindex="0"> Time: <span class="time">00:00</span></div>
+      </div>
 
         <button class="transcript--btn" id="transcript__audio--btn">
           Show transcript

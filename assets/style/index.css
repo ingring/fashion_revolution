@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
 .skip-to-content {
   position: absolute;
   top: -400px;
@@ -22,10 +30,6 @@
 .skip:focus {
   position: relative;
   left: 0;
-}
-
-body {
-  font-size: 16px;
 }
 
 a:hover, button:hover {
@@ -52,6 +56,8 @@ header button {
   background-color: #272228;
   color: white;
   font-weight: bold;
+  font-size: 1.8rem;
+  font-family: "Times New Roman", Times, serif;
 }
 header nav {
   max-width: 100vw;
@@ -96,6 +102,9 @@ header a {
 main h1, main h2, main h3 {
   text-align: center;
   padding: 10px;
+}
+main h1 {
+  font-size: 3.5rem;
 }
 main p {
   line-height: 22px;
@@ -167,15 +176,15 @@ footer a {
   color: white;
 }
 
+img {
+  width: 100vw;
+}
+
 .fullscreen_img {
   height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-#takeaction {
-  background-image: url("../img/take_action.jpg");
 }
 
 #firstpage {
@@ -186,11 +195,7 @@ footer a {
   background-image: url("../img/small_but_perfectly_formed.png");
 }
 
-img {
-  width: 100vw;
-}
-
-.playpause, .stop, .rwd, .fwd {
+.playpause, .stop, .rwd, .fwd, .mute, .volinc, .voldec {
   font-weight: bold;
   padding: 10px;
   margin: 10px;
@@ -209,7 +214,7 @@ img {
 .video--container .controls {
   margin: 0 auto;
 }
-.video--container .playpause, .video--container .stop, .video--container .rwd, .video--container .fwd {
+.video--container .playpause, .video--container .stop, .video--container .rwd, .video--container .fwd, .video--container .mute, .video--container .volinc, .video--container .voldec {
   background-color: white;
   color: #272228;
 }
@@ -235,7 +240,7 @@ img {
 .audio--container h3 {
   padding: 20px;
 }
-.audio--container .playpause, .audio--container .stop, .audio--container .rwd, .audio--container .fwd {
+.audio--container .playpause, .audio--container .stop, .audio--container .rwd, .audio--container .fwd, .audio--container .mute, .audio--container .volinc, .audio--container .voldec {
   background-color: #272228;
   color: white;
 }

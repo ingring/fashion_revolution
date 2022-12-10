@@ -60,7 +60,7 @@
 
         <!-- <video title="Good Clothes, Fair Pay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls> -->
         <section class="video--container">
-            <video class="video" controls>
+            <video class="video" poster="assets/img/video_poster.PNG" controls>
                 <source src="assets/media/video.mp4" type="video/mp4">
                 <source src="assets/media/video.webm" type="video/webm">
                 <track label="English" kind="subtitles" srclang="eng" src="assets/media/video.vtt" default />
@@ -71,6 +71,9 @@
                 <button class="stop">Stop</button>
                 <button class="rwd" aria-label="go back three minutes">Rwd</button>
                 <button class="fwd" aria-label="go forth three minutes">Fwd</button>
+                <button class="mute" type="button" data-state="mute">Mute</button>
+                <button class="volinc" type="button" data-state="volup">Vol+</button>
+                <button class="voldec" type="button" data-state="voldown">Vol-</button>
                 <div class="time--container" tabindex="0"> Time: <span class="time">00:00</span></div>
             </div>
 
