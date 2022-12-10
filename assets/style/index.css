@@ -121,9 +121,15 @@ main a.link--p {
   text-align: center;
 }
 
+#campaigns {
+  margin: 20px 0;
+  width: 100vw;
+}
+#campaigns p {
+  margin: 20px;
+}
+
 .campaign-item {
-  width: 80vw;
-  height: 125px;
   margin: 20px auto;
   background-color: #272228;
   padding: 20px;
@@ -405,6 +411,9 @@ form .submit {
     margin: 0 auto;
     width: 600px;
     height: 360px;
+  }
+  #campaigns {
+    width: 40vw;
   }
   .campaign-content {
     margin: auto;

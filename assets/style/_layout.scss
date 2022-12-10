@@ -143,9 +143,16 @@ main {
     
 }
 
+#campaigns {
+    margin: 20px 0;
+    width: 100vw;
+
+    p {
+        margin: 20px;
+    }
+}
+
 .campaign-item {
-    width: 80vw;
-    height: 125px;
     margin: 20px auto;
     background-color: #272228;
     padding: 20px;
