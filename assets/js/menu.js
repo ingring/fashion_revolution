@@ -4,7 +4,7 @@
 //Inspiration https://polypane.app/blog/the-perfect-responsive-menu/
 const menuToggle = document.querySelector('nav button');
 const menu = document.querySelector('nav ul');
-const button = document.querySelector('button');
+const button = document.querySelector('#menu-btn');
 
 menuToggle.addEventListener('click', function () {
   const open = JSON.parse(menuToggle.getAttribute('aria-expanded'));
@@ -55,7 +55,7 @@ function changeNavContent(e) {
     </li>
     `;
 
-    skipToCloseBtnRemove.outerHTML = '<li id="skip-to-close-btn-li" hidden><a class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a></li>';
+    skipToCloseBtnRemove.outerHTML = '<a id="skip-to-close-btn-li"  class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a>';
 
     const campaignsDropdownDesktop = document.querySelector("#campaigns__dropdown--desktop");
 

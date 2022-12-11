@@ -3,7 +3,7 @@
 const popUpButton = document.querySelector("#popup--btn");
 const popUpContainer = document.querySelector(".popup--container");
 const popUpFocus = document.querySelector("#popup--focus");
-const popupClose = document.querySelector("#exitPopup");
+const popupExit = document.querySelector("#exitPopup");
 
 setTimeout(function () {
 
@@ -12,6 +12,6 @@ setTimeout(function () {
 
 }, 2000);
 
-popupClose.addEventListener("click", function(){
+popupExit.addEventListener("click", function(){
     popUpContainer.classList.toggle("show");
 })
