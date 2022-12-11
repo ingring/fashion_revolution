@@ -23,7 +23,7 @@
     .playpause, .stop, .rwd, .fwd, .mute, .volinc, .voldec {
         background-color: white;
         color:#272228;
-        font-size: 1.8rem;;
+        font-size: 1.8rem;
     }
 }
 
@@ -62,8 +62,6 @@
     margin: 0 auto;
 }
 
-
-
 .audio::cue {
     font-size: large;
     background-color: #272228;
@@ -78,6 +76,7 @@
     text-decoration: none;
     border: none;
     font-weight: bold;
+    font-size: 1.8rem;
 }
 
 #transcript__audio--btn {

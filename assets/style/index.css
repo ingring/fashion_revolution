@@ -264,6 +264,7 @@ img {
   text-decoration: none;
   border: none;
   font-weight: bold;
+  font-size: 1.8rem;
 }
 
 #transcript__audio--btn {
