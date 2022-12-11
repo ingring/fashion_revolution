@@ -24,24 +24,3 @@ tr:hover {background-color: #ddd;}
 th.firstline {
     border-bottom: solid 2px black;
 }
-
-form {
-    margin: 40px auto;
-    display: grid;
-    
-
-    label {
-        grid-column: 1;
-        display: inline-block;
-    }
-
-    input {
-        margin: 5px 0;
-    }
-
-    .submit {        
-        margin: 5px 0 0 auto;
-        background-color: #272228;
-        color: white;
-    }
-}

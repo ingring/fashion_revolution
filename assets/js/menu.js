@@ -40,7 +40,7 @@ function changeNavContent(e) {
       </ul>
     </li>`;
     
-    skipToCloseBtnRemove.outerHTML = `<li id="skip-to-close-btn-li" hidden><a class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a></li>`;
+    skipToCloseBtnRemove.outerHTML = `<li id="skip-to-close-btn-li"><a class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a></li>`;
 
   } else {
     campaignsLI.outerHTML = `
@@ -55,7 +55,7 @@ function changeNavContent(e) {
     </li>
     `;
 
-    skipToCloseBtnRemove.outerHTML = ``;
+    skipToCloseBtnRemove.outerHTML = '<li id="skip-to-close-btn-li" hidden><a class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a></li>';
 
     const campaignsDropdownDesktop = document.querySelector("#campaigns__dropdown--desktop");
 

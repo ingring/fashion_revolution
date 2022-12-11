@@ -14,7 +14,6 @@
 
     <!-- Pop up after two minutes -->
     <div class="popup--container">
-      <div class="overlay"></div>
       <div
         class="popup--content"
         role="alertdialog"
@@ -25,7 +24,7 @@
           Be a Fashion Revolutionary,
           <a href="take_action.html">take action!</a>
         </p>
-        <button id="close" aria-label="exit popup">&#10006;</button>
+        <button id="exitPopup" aria-label="exit popup">&#10006;</button>
       </div>
     </div>
 
@@ -50,8 +49,7 @@
             id="campaignsLI"
             class="hidden"
             aria-label="List of campaigns"
-            tabindex="0"
-          >
+            tabindex="0">
             Campaigns
             <ul id="campaigns-dropdown">
               <li>
@@ -93,9 +91,7 @@
             <a href="take_action.html">Take action</a>
           </li>
           <li id="skip-to-close-btn-li">
-            <a class="menu-skip" id="skip-to-close-btn-remove" href="#menu-btn"
-              >Go to close menu</a
-            >
+            <a class="menu-skip" id="skip-to-close-btn-remove" href="#menu-btn">Close</a>
           </li>
         </ul>
       </nav>
@@ -135,7 +131,7 @@
       <img
         src="assets/img/who_made_my_clothes_runway.png"
         alt="runway, model wearing underwear with the words 'who made my clothes' written on her stomach"
-      />
+      >
 
       <section>
         <h2>Fashion Revolution Podcast</h2>
