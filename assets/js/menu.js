@@ -28,7 +28,7 @@ function changeNavContent(e) {
   // If the media query matches, it will display this javascript
   if (e.matches) { 
     campaignsLI.outerHTML = `
-    <li id='campaignsLI' class='hidden' aria-label='List of campaigns' tabindex=0>Campaigns
+    <li id='campaignsLI' class='hidden' tabindex=0>Campaigns
       <ul id="campaigns-dropdown">    
           <li><a class="skip" href="#after-dropdown">Skip over the navigation list of the different campaigns</a></li>
           <li class="hidden"><a href="fashion_revolution_week.html" aria-label="Campaign Fashion Revolution Week">Fashion Revolution Week</a></li>
@@ -41,8 +41,8 @@ function changeNavContent(e) {
   } else {
     campaignsLI.outerHTML = `
     <li id='campaignsLI'>
-      <button id="campaigns__dropdown--desktop" aria-label="List of campaigns">Campaigns</button>
-      <ul id="campaign-dropdown--content" class="dropdown-content">
+      <button id="campaigns__dropdown--desktop" >Campaigns</button>
+      <ul id="campaign-dropdown--content" class="dropdown-content" aria-haspopup="menu">
         <li><a href="fashion_revolution_week.html" aria-label="Campaign Fashion Revolution Week">Fashion Revolution Week</a></li>
         <li><a href="good_clothes_fair_pay.html" aria-label="Campaign Good Clothes, Fair Pay">Good Clothes, Fair Pay</a></li>
         <li><a href="whomademyclothes.html" aria-label="Campaign Who Made My Clothes">Who Made My Clothes</a></li>
