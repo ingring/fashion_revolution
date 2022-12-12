@@ -148,6 +148,9 @@ main a.link--p {
   color: white;
   text-decoration: none;
 }
+.campaign-item a h3 {
+  text-decoration: underline;
+}
 
 .take-action--container {
   background-color: #272228;
@@ -159,7 +162,6 @@ main a.link--p {
 }
 .take-action--container .take-action--btn {
   color: white;
-  text-decoration: none;
   min-width: 38px;
   min-height: 38px;
 }

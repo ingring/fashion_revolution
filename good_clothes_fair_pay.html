@@ -1,107 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/index.css">
     <title>Good clothes, fair pay</title>
     <meta name="description" content="About good clothes, fair pay campaign">
-</head>
-<body>
+  </head>
+  <body>
     <!-- skip to main content -->
     <a class="skip-to-content" href="#content">Skip to main</a>
 
     <!-- Pop up after two minutes -->
     <div class="popup--container">
-        <div class="popup--content" role="alertdialog" aria-modal="true" aria-labelledby="dialog_label">
-            <p id="dialog_label">Be a Fashion Revolutionary, <a href="take_action.html">take action!</a></p>
-            <button id="exitPopup" aria-label="exit popup">&#10006;</button>
-        </div>
+      <div
+        class="popup--content"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="dialog_label"
+      >
+        <p id="dialog_label">
+          Be a Fashion Revolutionary,
+          <a href="take_action.html">take action!</a>
+        </p>
+        <button id="exitPopup" aria-label="exit popup">&#10006;</button>
+      </div>
     </div>
 
     <header>
-        <div>Fashion revolution</div>
-        <nav>
-            <!-- inspiration: https://polypane.app/blog/the-perfect-responsive-menu/ -->
-            <div class="right">
-                <button aria-expanded="false" aria-controls="menu" id="menu-btn">menu</button>
-            </div>
-            <ul id="menu" role="navigation" hidden>
-                <li><a href="index.html">Home</a></li>
-                <li class="hidden"><a href="environmental_impact.html">Environmental impact</a></li>
-                <li class="hidden"><a href="sustainability.html">Sustainability</a></li>
-                <li id="campaignsLI" class="hidden" aria-label="List of campaigns" tabindex=0>Campaigns
-                    <ul id="campaigns-dropdown">    
-                        <li><a class="menu-skip" href="#after-dropdown">Skip over the navigation list of the different campaigns</a></li>
-                        <li class="hidden"><a href="fashion_revolution_week.html" aria-label="Campaign Fashion Revolution Week">Fashion Revolution Week</a></li>
-                        <li class="hidden"><a href="good_clothes_fair_pay.html" aria-label="Campaign Good Clothes, Fair Pay">Good Clothes, Fair Pay</a></li>
-                        <li class="hidden"><a href="whomademyclothes.html" aria-label="Campaign Who Made My Clothes">Who Made My Clothes</a></li>
-                        <li class="hidden"><a href="small_but_perfectly_formed.html" aria-label="Campaign small but perfectly formed">Small but perfectly formed</a></li>
-                    </ul>
-                </li>
-                <li class="hidden" id="after-dropdown"><a href="take_action.html">Take action</a></li>
-                <li id="skip-to-close-btn-li"><a class="menu-skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a></li>
+      <div>Fashion revolution</div>
+      <nav>
+        <!-- inspiration: https://polypane.app/blog/the-perfect-responsive-menu/ -->
+        <div class="right">
+          <button aria-expanded="false" aria-controls="menu" id="menu-btn">
+            menu
+          </button>
+        </div>
+        <ul id="menu" role="navigation" hidden>
+          <li><a href="index.html">Home</a></li>
+          <li class="hidden">
+            <a href="environmental_impact.html">Environmental impact</a>
+          </li>
+          <li class="hidden">
+            <a href="sustainability.html">Sustainability</a>
+          </li>
+          <li
+            id="campaignsLI"
+            class="hidden"
+            aria-label="List of campaigns"
+            tabindex="0"
+          >
+            Campaigns
+            <ul id="campaigns-dropdown">
+              <li>
+                <a class="menu-skip" href="#after-dropdown"
+                  >Skip over the navigation list of the different campaigns</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="fashion_revolution_week.html"
+                  aria-label="Campaign Fashion Revolution Week"
+                  >Fashion Revolution Week</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="good_clothes_fair_pay.html"
+                  aria-label="Campaign Good Clothes, Fair Pay"
+                  >Good Clothes, Fair Pay</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="whomademyclothes.html"
+                  aria-label="Campaign Who Made My Clothes"
+                  >Who Made My Clothes</a
+                >
+              </li>
+              <li class="hidden">
+                <a
+                  href="small_but_perfectly_formed.html"
+                  aria-label="Campaign small but perfectly formed"
+                  >Small but perfectly formed</a
+                >
+              </li>
             </ul>
-        </nav>
+          </li>
+          <li class="hidden" id="after-dropdown">
+            <a href="take_action.html">Take action</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main id="content">
-        <section>
-            <h1>Good Clothes, Fair Pay</h1>
-            <p>Good Clothes, Fair Pay is a grassroots campaign calling for living wage legislation across the garment, textile and footwear sector. We need one million signatures from EU citizens by July 2023 in order to push for game-changing legislation that requires companies to conduct living wage due diligence in their global supply chains.</p>
-        </section>
+      <section>
+        <h1>Good Clothes, Fair Pay</h1>
+        <p>
+          Good Clothes, Fair Pay is a grassroots campaign calling for living
+          wage legislation across the garment, textile and footwear sector. We
+          need one million signatures from EU citizens by July 2023 in order to
+          push for game-changing legislation that requires companies to conduct
+          living wage due diligence in their global supply chains.
+        </p>
+      </section>
 
+      <!-- Skipping the video -->
+      <a href="#skip-video" class="skip"
+        >Skip video about good clothes, fair pay</a
+      >
 
-        <!-- Skipping the video -->
-        <a href="#skip-video" class="skip">Skip video about good clothes, fair pay</a>
+      <!-- <video title="Good Clothes, Fair Pay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls> -->
+      <section class="video--container">
+        <video class="video" poster="assets/img/video_poster.PNG" controls>
+          <source src="assets/media/video.mp4" type="video/mp4" />
+          <source src="assets/media/video.webm" type="video/webm" />
+          <track
+            label="English"
+            kind="subtitles"
+            srclang="eng"
+            src="assets/media/video.vtt"
+            default
+          />
+        </video>
 
-        <!-- <video title="Good Clothes, Fair Pay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls> -->
-        <section class="video--container">
-            <video class="video" poster="assets/img/video_poster.PNG" controls>
-                <source src="assets/media/video.mp4" type="video/mp4">
-                <source src="assets/media/video.webm" type="video/webm">
-                <track label="English" kind="subtitles" srclang="eng" src="assets/media/video.vtt" default />
-            </video>
+        <div class="controls">
+          <button class="playpause">Play</button>
+          <button class="stop">Stop</button>
+          <button class="rwd" aria-label="go back three seconds">Rwd</button>
+          <button class="fwd" aria-label="go forth three seconds">Fwd</button>
+          <button class="mute" type="button" data-state="mute">Mute</button>
+          <button
+            class="volinc"
+            type="button"
+            data-state="volup"
+            aria-label="increase volume"
+          >
+            Vol+
+          </button>
+          <button
+            class="voldec"
+            type="button"
+            data-state="voldown"
+            aria-label="decrease volume"
+          >
+            Vol-
+          </button>
+          <div class="time--container" tabindex="0">
+            Time: <span class="time">00:00</span>
+          </div>
+        </div>
 
-            <div class="controls">  
-                <button class="playpause">Play</button>
-                <button class="stop">Stop</button>
-                <button class="rwd" aria-label="go back three minutes">Rwd</button>
-                <button class="fwd" aria-label="go forth three minutes">Fwd</button>
-                <button class="mute" type="button" data-state="mute">Mute</button>
-                <button class="volinc" type="button" data-state="volup" aria-label="increase volume">Vol+</button>
-                <button class="voldec" type="button" data-state="voldown" aria-label="decrease volume">Vol-</button>
-                <div class="time--container" tabindex="0"> Time: <span class="time">00:00</span></div>
-            </div>
+        <button class="transcript--btn" id="transcript__video--btn">
+          Show transcript
+        </button>
+        <div id="transcript__hidden" hidden>
+          <p tabindex="0">
+            Wearing good clothes means the people who made them receive fair pay
+            for their work. But right now, most textile and garment workers
+            cannot afford to live in decent housing, eat healthy food or go to
+            the doctor. They even struggle to send their kids to school. A
+            living wage is not a luxury, it is a fundamental human right. We
+            demand laws that protect the human right to fair pay.We want to see
+            a living wage for the people who make our clothes around the world.
+            The EU has the power to change this. Help us get to one million
+            signatures for #GoodClothesFairPay.
+          </p>
+          <p>SIGN NOW</p>
+        </div>
+      </section>
 
-            <button class="transcript--btn" id="transcript__video--btn">Show transcript</button>
-            <div id="transcript__hidden" hidden>
-                <p tabindex="0">
-                    Wearing good clothes means the people who made them receive fair pay for their work.
-                    But right now, most textile and garment workers cannot afford to live in decent housing, eat healthy food or go to the doctor.
-                    They even struggle to send their kids to school.
-                    A living wage is not a luxury, it is a fundamental human right.
-                    We demand laws that protect the human right to fair pay.We want to see a living wage for the people who make our clothes around the world. The EU has the power to change this. Help us get to one million signatures for #GoodClothesFairPay.
-                </p>
-                <p>
-                    SIGN NOW
-                </p>
-            </div>
-        </section>
+      <section id="skip-video">
+        <h2>Why do we need legislation on living wages?</h2>
+        <p>
+          Millions of people work in textile, clothing and footwear production
+          around the world. The vast majority are not paid enough to fulfil
+          their basic needs.
+        </p>
 
-        <section id="skip-video">
-            <h2>Why do we need legislation on living wages?</h2>
-            <p>Millions of people work in textile, clothing and footwear production around the world. The vast majority are not paid enough to fulfil their basic needs.</p>
-
-            <p>These people remain trapped in poverty while big fashion companies continue to profit from their hard work. It is a deeply unfair and exploitative system, and we must demand better. The Covid-19 pandemic has deepened wage insecurity for the people who make our clothes, leaving workers without any social safety net, and struggling to pay for food, healthcare and shelter.</p>
-            <p>This is why the Good Clothes Fair Pay campaign, a European Citizens’ Initiative for living wages in the fashion supply chain, is demanding legislation that helps achieve fair pay for textile and garment workers around the world.</p>
-        </section>
-
+        <p>
+          These people remain trapped in poverty while big fashion companies
+          continue to profit from their hard work. It is a deeply unfair and
+          exploitative system, and we must demand better. The Covid-19 pandemic
+          has deepened wage insecurity for the people who make our clothes,
+          leaving workers without any social safety net, and struggling to pay
+          for food, healthcare and shelter.
+        </p>
+        <p>
+          This is why the Good Clothes Fair Pay campaign, a European Citizens’
+          Initiative for living wages in the fashion supply chain, is demanding
+          legislation that helps achieve fair pay for textile and garment
+          workers around the world.
+        </p>
+      </section>
     </main>
 
     <footer>
-        <p>This website is inspired by the <a href="https://www.fashionrevolution.org/" target="_blank">https://www.fashionrevolution.org/</a></p>
+      <p>
+        This website is inspired by the
+        <a href="https://www.fashionrevolution.org/" target="_blank"
+          >fashion revolution website</a
+        >
+      </p>
     </footer>
 
     <!-- The navigation menu for mobile version -->
@@ -115,6 +217,5 @@
 
     <!-- hello bar pop up -->
     <script src="assets/js/popup.js"></script>
-
-</body>
+  </body>
 </html>

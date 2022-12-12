@@ -22,9 +22,7 @@ menuToggle.addEventListener('click', function () {
 // Dropdown inside a dropdown
 const campaignsDropdown = document.querySelector("#campaigns-dropdown");
 const campaignsDropdownLi = document.querySelector("#campaigns-dropdown li");
-const skipToCloseBtnRemove = document.querySelector("#skip-to-close-btn-remove");
 const campaignsLi = document.querySelector("#campaignsLI");
-const skipCloseLi = document.querySelector("#skip-to-close-btn-li");
 
 function changeNavContent(e) {
   // If the media query matches, it will display this javascript
@@ -39,8 +37,6 @@ function changeNavContent(e) {
           <li class="hidden"><a href="small_but_perfectly_formed.html" aria-label="Campaign small but perfectly formed">Small but perfectly formed</a></li>
       </ul>
     </li>`;
-    
-    skipToCloseBtnRemove.outerHTML = `<li id="skip-to-close-btn-li"><a class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a></li>`;
 
   } else {
     campaignsLI.outerHTML = `
@@ -54,8 +50,6 @@ function changeNavContent(e) {
       </ul>
     </li>
     `;
-
-    skipToCloseBtnRemove.outerHTML = '<a id="skip-to-close-btn-li"  class="skip" id="skip-to-close-btn-remove" href="#menu-btn">Go to close menu</a>';
 
     const campaignsDropdownDesktop = document.querySelector("#campaigns__dropdown--desktop");
 
@@ -72,7 +66,6 @@ function changeNavContent(e) {
 let mediaEvent = window.matchMedia("(max-width: 900px)");
 changeNavContent(mediaEvent);
 mediaEvent.addEventListener('change', changeNavContent);
-
 
 
 // Close the dropdown menu if the user clicks outside of it
